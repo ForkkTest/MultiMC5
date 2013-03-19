@@ -1,7 +1,6 @@
 language: cpp
 compiler:
   - gcc
-  - clang
 
 before_script:
   - sudo apt-add-repository -y ppa:czchen/travis-ci
@@ -11,4 +10,4 @@ before_script:
   - sudo apt-get install -yqq cmake
   - sudo apt-get install -yqq ubuntu-sdk
 
-script: cmake . && find . && make
+script: cmake . && make
