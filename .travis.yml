@@ -11,4 +11,4 @@ before_script:
   - sudo apt-get install -y cmake
   - sudo apt-get install -y ubuntu-sdk
 
-script: mkdir build && cd build && cmake .. && make
+script: cmake . && make
