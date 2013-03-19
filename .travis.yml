@@ -8,4 +8,4 @@ before-install:
   - sudo apt-get update -y
   - sudo apt-get install -y ubuntu-sdk-meta
 
-script: cmake src && make
+script: mkdir build && cd build && cmake .. && make
