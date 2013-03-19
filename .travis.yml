@@ -11,3 +11,7 @@ before_script:
   - sudo apt-get install -yqq ubuntu-sdk
 
 script: cmake . && make
+
+notifications:
+  irc:
+    - "irc.esper.net#MultiMC"
